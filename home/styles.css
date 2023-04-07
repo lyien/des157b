@@ -3,14 +3,14 @@
 }
 
 body {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background-color: #F5F5F3;
+    color: #1B0E02;
     transition: all 2s;
 }
 
 body.switch {
-    background-color: rgb(235, 235, 235);
-    color: #333;
+    background-color: #050200;
+    color: #050200;
 }
 
 #container {
@@ -20,11 +20,43 @@ body.switch {
     /* make sure the columns don't get too small and text stays readable */
     min-width: 900px;
     margin: 1em auto;
-    padding-top: 2em;
 }
 
 header {
     margin: 0 auto 2em auto;
+    width:1100px;
+}
+
+h1{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 60px;
+    padding-bottom:0;
+    text-transform:lowercase;
+    margin-bottom:0;
+}
+
+h1.switch{
+    font-family: 'MuseoModerno', cursive;
+    text-transform:uppercase;
+    color:#FECBCB;
+}
+
+h2{
+    font-family: 'Gelasio';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+h2.switch{
+    font-family: 'Roboto Mono';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FECBCB;
 }
 
 #banner {
@@ -50,13 +82,24 @@ main {
     display: flex;
     justify-content: space-evenly;
     margin: 1em auto;
+    width:1100px;
+    gap: 70px;
+}
+
+main.switch{
+    gap:30px;
 }
 
 main section {
     width: 25%;
-    border: 1px rgb(235, 235, 235) dashed;
-    margin: 0 .25em;
+    border-left: 1px solid #1B0E02;
     padding: 1em;
+}
+
+section.switch{
+    background: #FFFFFF;
+    border-radius: 5px;
+    border:0px;
 }
 
 a {
@@ -67,18 +110,35 @@ ol,
 ul {
     list-style-type: none;
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 20px;
 }
 
-section li {
+/* section li {
     padding-left: 1.2em;
+} */
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    padding-left: 20px;
+
+}
+
+h3.switch{
+    font-family: 'MuseoModerno';
+    font-weight: 700;
+    font-size: 16px;
+    color: #1B0E02;
 }
 
 section a {
     line-height: 1.1em;
     display: inline-block;
-    padding: .5em;
-    color: orange;
+    padding-bottom: .5em;
+    font-family: 'Gelasio', serif;
+    color: #1B0E02;
+    text-transform: lowercase;
+
 }
 
 section a:hover {
@@ -98,15 +158,23 @@ section.switch a:hover {
 button {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 132px;
     padding: 12px;
-    background-color: orange;
-    color: #333;
-    border: 1px solid transparent;
+    background-color: #F5F5F3;
+    color: #1B0E02;
+    border: 1px solid #1B0E02;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 button:hover {
-    background-color: coral;
+    background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
+    background-size: 600% 600%;
+    animation: gradient 8s ease infinite;
     cursor: pointer;
 }
 
@@ -118,4 +186,10 @@ button.switch {
 button.switch:hover {
     background-color: #333;
     color: rgb(235, 235, 235)
+}
+
+@keyframes gradient {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
 }
