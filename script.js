@@ -11,6 +11,10 @@
     const main = document.querySelector("main");
     let mode = 'light';
 
+   
+   
+
+
     button.addEventListener('click', function() {
         if (mode === 'light') {
             body.className = 'switch';
@@ -40,7 +44,7 @@
             h1.removeAttribute('class');
             h2.removeAttribute('class');
             main.removeAttribute('class');
-            banner.innerHTML = `<img src="images/ocean.png" alt="image of the ocean">`
+            banner.innerHTML = `<img src="images/flower.png" alt="image of flowers in a field">`
             button.innerHTML = `Color`;
 
 
