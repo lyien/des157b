@@ -142,8 +142,7 @@ section a {
 }
 
 section a:hover {
-    background-color: orange;
-    color: #333;
+    text-decoration: underline;
 }
 
 section.switch a {
@@ -153,8 +152,9 @@ section.switch a {
 }
 
 section.switch a:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background-color:  #FECBCB;
+    /* color: #670101; */
+    text-decoration: none;
 }
 
 button {
