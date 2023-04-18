@@ -6,10 +6,10 @@
     const concertsec = document.querySelector("#concertsec");
     const schoolsec = document.querySelector("#schoolsec");
     const sections = document.querySelectorAll("section");
-    const myVideo = document.querySelector("#me");
-    const loading = document.querySelector("#loading");
+    const videos = document.querySelector("#me");
+    const loading = document.querySelector("#loadingsection");
 
-    myVideo.addEventListener("playing", function(){
+    videos.addEventListener("playing", function(){
         loading.style.display = "none";
     })
 
