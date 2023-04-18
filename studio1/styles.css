@@ -11,7 +11,7 @@ header p {
     font-size: 32px;
     color:#1B0E02;
     display: inline-block;
-    animation: scroll-left 30s linear infinite;
+    animation: scroll-left 40s linear infinite;
     font-weight:700;
 }
 
