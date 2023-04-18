@@ -5,12 +5,26 @@ body{
    padding-right:50px;
    margin:auto;
 }
-h1 {
+
+header p {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
     color:#1B0E02;
+    display: inline-block;
+    animation: scroll-left 30s linear infinite;
+    font-weight:700;
+}
 
-    
+#loading{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color:#1B0E02;
+    animation: opacity 5s ease infinite;
+    position:absolute;
+    top:50%;
+    left:40%;
+    z-index: 1;
+
 }
 
 footer{
@@ -26,20 +40,69 @@ footer a{
     color:#1B0E02;
 }
 
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* header */
+
+header{
+    overflow:hidden;
+    width:100%;
+    white-space: nowrap;
+    display:flex;
+    gap: 30px;
+    justify-content:flex-start;
+}
+
 /* flexbox */
 
 main{
     display:flex;
-    gap: 20px;
+    flex:1;
+    height:600px;
 }
 
 video{
     display: block;
     align-content: center;
     height:100%;
+    filter: grayscale(50%);
+
 }
 
 section{
-    width:25%;
     overflow: hidden;
+    width:25%;
+    transition: all 2s;
+
+}
+
+section.wide{
+    width:100%;
+}
+
+section.small{
+    width:10%;
+}
+
+/* loading */
+
+/* animation */
+
+@keyframes scroll-left {
+    0%{transform: translateX(0);
+    }
+    100%{transform: translateX(-100%)}
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@keyframes opacity {
+    0%, 100% { opacity: 0;}
+    50%   { opacity: 1; }   
 }
