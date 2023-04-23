@@ -1,0 +1,43 @@
+{
+    "day1" : {
+        "time" : "3:14pm",
+        "date" : "Sunday, Apr 9, 2023",
+        "location" : "T%, Sacramento"
+    },
+    "day2" : {
+        "time" : "2:28pm",
+        "date" : "Monday, Apr 10, 2023",
+        "location" : "Silo, UC Davis"
+    },
+    "day3" : {
+        "time" : "8:33pm",
+        "date" : "Tuesday, Apr 11, 2023",
+        "location" : "Craft Center, UC Davis"
+    },
+    "day4" : {
+        "time" : "3:11pm",
+        "date" : "Wednesday, Apr 12, 2023",
+        "location" : "Rock Hall, UC Davis"
+    },
+    "day5" : {
+        "time" : "7:45pm",
+        "date" : "Thursday, Apr 13, 2023",
+        "location" : "Apartment, Davis"
+    },
+    "day6" : {
+        "time" : "3:15pm",
+        "date" : "Friday, Apr 14, 2023",
+        "location" : "Pachamama, Davis"
+    },
+    "day7" : {
+        "time" : "4:31pm",
+        "date" : "Saturday, Apr 15, 2023",
+        "location" : "Gymnastics House, Davis"
+    },
+    "day8" : {
+        "time" : "6:45pm",
+        "date" : "Sunday, Apr 16, 2023",
+        "location" : "Hayes Valley, San Francisco"
+    }
+   
+}
