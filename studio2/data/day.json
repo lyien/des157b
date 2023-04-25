@@ -1,43 +1,52 @@
 {
-    "day1" : {
+    "Sunday" : {
         "time" : "3:14pm",
         "date" : "Sunday, Apr 9, 2023",
-        "location" : "T%, Sacramento"
+        "location" : "T%, Sacramento",
+        "img": "sunday1.png"
+
     },
-    "day2" : {
+    "Monday" : {
         "time" : "2:28pm",
         "date" : "Monday, Apr 10, 2023",
-        "location" : "Silo, UC Davis"
+        "location" : "Silo, UC Davis",
+        "img": "monday.png"
     },
-    "day3" : {
+    "Tuesday" : {
         "time" : "8:33pm",
         "date" : "Tuesday, Apr 11, 2023",
-        "location" : "Craft Center, UC Davis"
+        "location" : "Craft Center, UC Davis",
+        "img": "tuesday.png"
     },
-    "day4" : {
+    "Wednesday" : {
         "time" : "3:11pm",
         "date" : "Wednesday, Apr 12, 2023",
-        "location" : "Rock Hall, UC Davis"
+        "location" : "Rock Hall, UC Davis",
+        "img": "wednesday.png"
     },
-    "day5" : {
+    "Thursday" : {
         "time" : "7:45pm",
         "date" : "Thursday, Apr 13, 2023",
-        "location" : "Apartment, Davis"
+        "location" : "Apartment, Davis",
+        "img": "thursday.png"
     },
-    "day6" : {
+    "Friday" : {
         "time" : "3:15pm",
         "date" : "Friday, Apr 14, 2023",
-        "location" : "Pachamama, Davis"
+        "location" : "Pachamama, Davis",
+        "img": "friday.png"
     },
-    "day7" : {
+    "Saturday" : {
         "time" : "4:31pm",
         "date" : "Saturday, Apr 15, 2023",
-        "location" : "Gymnastics House, Davis"
+        "location" : "Gymnastics House, Davis",
+        "img": "saturday.png"
     },
-    "day8" : {
+    "Sunday2" : {
         "time" : "6:45pm",
         "date" : "Sunday, Apr 16, 2023",
-        "location" : "Hayes Valley, San Francisco"
+        "location" : "Hayes Valley, San Francisco",
+        "img": "sunday2.png"
     }
    
 }

@@ -45,6 +45,10 @@ main{
     cursor: pointer;
 }
 
+#daybutton button.click{
+    background-color:white;
+}
+
 #dayimg{
     text-align: center;
     font-weight:300;
