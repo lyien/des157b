@@ -12,7 +12,7 @@
 
 
     function createButton(data){
-        let htmlButton = "<button></button>"
+        let htmlButton = "<button id='hidden'></button>"
         const dataPoints = Object.keys(data);
         console.log(dataPoints);
         dataPoints.forEach(function(eachPoint){
