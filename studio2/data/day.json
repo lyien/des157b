@@ -3,6 +3,7 @@
         "time" : "3:14pm",
         "date" : "Sunday, Apr 9, 2023",
         "location" : "T%, Sacramento",
+        "alt" : "Laura and friends at boba",
         "img": "sunday1.png"
 
     },
@@ -10,43 +11,50 @@
         "time" : "2:28pm",
         "date" : "Monday, Apr 10, 2023",
         "location" : "Silo, UC Davis",
+        "alt" : "Laura eating a crepe with her roommate",
         "img": "monday.png"
     },
     "Tuesday" : {
         "time" : "8:33pm",
         "date" : "Tuesday, Apr 11, 2023",
         "location" : "Craft Center, UC Davis",
+        "alt": "Laura and her roommate at a glass bead making class",
         "img": "tuesday.png"
     },
     "Wednesday" : {
         "time" : "3:11pm",
         "date" : "Wednesday, Apr 12, 2023",
         "location" : "Rock Hall, UC Davis",
+        "alt": "Laura in class",
         "img": "wednesday.png"
     },
     "Thursday" : {
         "time" : "7:45pm",
         "date" : "Thursday, Apr 13, 2023",
         "location" : "Apartment, Davis",
+        "alt": "Laura eating dinner from Nick the Greek",
         "img": "thursday.png"
     },
     "Friday" : {
         "time" : "3:15pm",
         "date" : "Friday, Apr 14, 2023",
         "location" : "Pachamama, Davis",
+        "alt": "Laura got her ears pierced!",
         "img": "friday.png"
     },
     "Saturday" : {
         "time" : "4:31pm",
         "date" : "Saturday, Apr 15, 2023",
         "location" : "Gymnastics House, Davis",
+        "alt": "Laura at on Picnic Day at a party",
         "img": "saturday.png"
     },
-    "Sunday2" : {
-        "time" : "6:45pm",
-        "date" : "Sunday, Apr 16, 2023",
-        "location" : "Hayes Valley, San Francisco",
-        "img": "sunday2.png"
+    "Recap" : {
+        "time" : "Apr 9, 2023 - Apr 15, 2023",
+        "date" : "Week Recap",
+        "location" : "Davis, CA",
+        "alt": "Recap Video",
+        "img": "recap.gif"
     }
    
 }

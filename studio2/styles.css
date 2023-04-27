@@ -61,6 +61,8 @@ h2{
 
 img{
     border-radius: 10px;
+    width:325px;
+    height:401px;
 }
 
 footer{
@@ -78,10 +80,5 @@ footer a:hover{
 
 footer p{
     font-weight:300;
-}
-
-#hidden{
-    opacity:0;
-    display: none;
 }
 
