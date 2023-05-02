@@ -36,8 +36,6 @@
 
     function updateInterface(value, jsonData){
         let text = '';
-        let imgs = '';
-        let video = '';
         text+= `<h2>${jsonData[value].date}</h2>
         <p>${jsonData[value].time}</p>
         <img src="images/${jsonData[value].img}" alt="${jsonData[value].alt}">
