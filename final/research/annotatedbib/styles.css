@@ -1,0 +1,43 @@
+body{
+    width:700px;
+    margin:auto;
+    background-color: #F5F5F5;
+}
+
+header{
+    padding-top:30px;
+}
+
+h1, h2{
+    font-family: 'Open Sans', sans-serif;
+    color:#206684;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    color:#206684;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-size:16px;
+    line-height: 1.3em;
+}
+
+header h2, header h1{
+    margin:0;
+}
+
+.citation{
+    font-size: 14px;
+}
+
+
