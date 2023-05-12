@@ -12,3 +12,7 @@ img{
     width: 468px;
     height: 371px;
 }
+
+p{
+    line-height: 1.3em;
+}

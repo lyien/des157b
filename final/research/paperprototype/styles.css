@@ -1,0 +1,25 @@
+body{
+    font-family: 'Lato', sans-serif;
+    width: 700px;
+    margin:auto;
+    margin-top:5%;
+ }
+
+h1{
+    font-weight: 900;
+}
+
+section{
+    display:flex;
+    gap: 20px;
+    width:500px;
+}
+
+p{
+    line-height: 1.3em;
+}
+
+img{
+    width: 468px;
+    height: 269px;;
+}
