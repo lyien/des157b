@@ -6,6 +6,7 @@ const editBtns = document.querySelectorAll(".fa-edit");
 const addFriendForm = document.getElementById("add-friend");
 const editFriendForm = document.getElementById("edit-friend");
 const friendList = document.querySelector("main ol");
+const inputs = document.querySelectorAll("#add-friend input:not([type=submit])");
 
 async function displayFriends() {
     const friends = Parse.Object.extend("Friends");
@@ -59,8 +60,43 @@ newBtn.addEventListener("click", function (event) {
 
 addFriendForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    addFriendForm.className = "add-friend-offscreen";
+    // addFriendForm.className = "add-friend-offscreen";
+    addFriend();
 })
+
+async function addFriend(){
+    const newFriend = {};
+
+    for(let i = 0; i<inputs.length; i++){
+        let key = inputs[i].getAttribute('name');
+        let value = inputs[i].value;
+        newFriend[key]=value;
+    }
+
+    if(newFriend.fname != "" && newFriend.lname !="" && newFriend.email != ""){
+        const newFriendData = new Parse.Object('Friends');
+        newFriendData.set('fname', newFriend.fname);
+        newFriendData.set('lname', newFriend.lname);
+        newFriendData.set('email', newFriend.email);
+        newFriendData.set('facebook', newFriend.facebook);
+        newFriendData.set('twitter', newFriend.twitter);
+        newFriendData.set('instagram', newFriend.instagram);
+        newFriendData.set('linkedin', newFriend.linkedin);
+
+        try{
+            const result = await newFriendData.save();
+            //console.log('friends created', result);
+            resetFormFields();
+            addFriendForm.className = "add-friend-offscreen";
+            friendList.innerHTML = "";
+            displayFriends();
+        } catch(error){
+            console.error('Error while creating friend: ', error);
+        }
+    } else {
+        addFriendForm.className = "add-friend-offscreen";
+    }
+} 
 
 for (let i = 0; i < editBtns.length; i++) {
     editBtns[i].addEventListener("click", function (event) {
@@ -73,3 +109,17 @@ editFriendForm.addEventListener("submit", function (event) {
     event.preventDefault();
     editFriendForm.className = "edit-friend-offscreen";
 })
+
+function resetFormFields(){
+    document.getElementById("fname").value = "";
+    document.getElementById("lname").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("fbook").value = "https://facebook.com";
+    document.getElementById("twitter").value = "https://twitter.com";
+    document.getElementById("fbook").value = "https://instagram.com";
+    document.getElementById("fbook").value = "https://linkedin.com";
+}
+
+
+
+
