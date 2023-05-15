@@ -9,6 +9,10 @@
      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
      crossorigin=""/>
 
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Unbounded:wght@300;700;900&display=swap" rel="stylesheet">
+
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <!-- link to custom css -->
     <link href="styles.css" rel="stylesheet">
@@ -21,7 +25,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-
     <!-- link to custom js -->
     <script src="script.js" defer></script>
     
@@ -29,18 +32,51 @@
 </head>
 <body>
 
-  <section>
-    <h1>Davis Destinations</h1>
+  <section id="header">
+    <div figure data-aos="fade-up" data-aos-duration="3000"      data-aos-anchor-placement="center-bottom">
+      <h1>Davis Destinations</h1>
+    <p>Laura Yien</p>
+    </div>
+    
   </section>
 
-  <section></section>
+  <section id="imgsection">
+    <h2 data-aos="fade-down" data-aos-duration="800">Some Featured Spots</h2>
 
-  <section>
-    <h2>View These Must See Spots on the Map</h2>
-    <div id="map" data-aos = "fade-down" data-aos-duration="1500"></div>
+    <div id="imagegroup">
+      <figure data-aos="flip-left">
+        <img src="images/arb.png">
+        <figcaption>
+          Aboretum
+        </figcaption>
+      </figure>
+
+      <figure data-aos="flip-left" data-aos-offset="200">
+        <img src="images/bike.png">
+        <figcaption>
+          US Cycling Hall of Fame
+        </figcaption>
+      </figure>
+
+      <figure data-aos="flip-left" data-aos-offset="300">
+        <img src="images/seal.png">
+        <figcaption>
+          Davis Centennial Seal
+        </figcaption>
+      </figure>
+        
+  
+    </div>
   </section>
-    
-   
-    
+
+  <section id="mapsection">
+    <h2 data-aos="fade-down" data-aos-duration="800">All Spots on the Map</h2>
+      <div id="map"></div>
+  </section>
+
+  <footer>
+    <h2>Thanks for Visiting!</h2>
+    <p>Made with <a href="https://leafletjs.com/" target='blank'>Leaflet</a> and <a href="https://michalsnik.github.io/aos/" target='blank'>Animate on Scroll Libraries</a></p>
+  </footer>
 </body>
 </html>
