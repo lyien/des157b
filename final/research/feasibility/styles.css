@@ -1,0 +1,63 @@
+* {
+    color: #1B0E02;
+}
+
+body {
+    margin: auto;
+    background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
+    background-size: 600% 600%;
+    animation: gradient 12s ease infinite;
+}
+
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 3em;
+    margin: 0;
+    padding-top: 50px;
+}
+
+header h2, h3{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+}
+
+section h2 {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 1.5em;
+}
+
+section {
+    border: 2px solid #1B0E02;
+    box-shadow: -5px 5px 0px 2px #000000;
+    background-color: white;
+    width: 650px;
+    margin:auto;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+section li, p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+
+a:hover {
+    color: #3b8aaf;
+}
+
+@keyframes gradient {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
