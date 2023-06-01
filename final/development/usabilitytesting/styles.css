@@ -1,0 +1,18 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    width:1000px;
+    margin:auto;
+}
+
+.bold{
+    font-weight:700;
+}
+
+section, header{
+    width: 700px;
+    margin:auto;
+}
+
+section p{
+    line-height: 1.5em;
+}
